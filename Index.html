@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Icofont/fontawesome-free-6.2.1-web/css/all.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .mode{
+            margin-left: 10%;
+        }
+        .pad{
+            margin-inline: auto;
+            text-align: center;
+            background-color: aqua;
+            box-shadow: 0px 0px 20px black;
+        }
+        .type{
+            margin-inline: auto;
+        }
+        .mac{
+            border: solid 1px blue;
+        }
+        #sign{
+            height: 40px;
+            width: 70px;
+            background-color: burlywood;
+            margin-inline: auto;
+        }
+        .gg{
+            min-width: 40px;
+            height: 50px;
+            background-image: linear-gradient(to bottom, aqua, rgb(60, 60, 237));
+            margin-inline: auto;
+            box-shadow: 0px 0px 10px black;
+        }
+    </style>
+</head>
+<body id="body" class="d-grid align-items-center">
+    <div class="w-75 d-flex justify-content-around mode">
+        <div>
+            <button class="btn btn-outline-none bg-light my-1 mx-5" onclick="light()"><i class="fa fa-lightbulb text-dark"></i>Light mode</button>
+            <button class="btn btn-outline-none bg-dark text-light my-1 mx-5" onclick="dark()"><i class="fa fa-lightbulb"></i>Dark mode</button>
+        </div>
+        <button onclick="clear()" class="btn btn-outline-none bg-primary my-1 mx-5" type="reset">Clear</button>
+    </div>
+    <div class="pad w-75 rounded-5" id="pad">
+        <div class="d-grid w-50 my-5 type">
+            <input id="nob" class="text-center py-2 w-100 mac" value="" type="number">
+            <p class="text-black py-1 mt-3" id="sign"></p>
+            <input id="nob2" class="text-center py-2 w-100 mac" value="" type="number">
+        </div>
+        <h1 class="text-black">=</h1>
+        <h1  id="go" class="gg bg-success w-50">0</h1>
+        <div class="btns my-5">
+            <button class="btn btn-outline-none bg-warning px-5 my-4" onclick="add()">+</button>
+            <button class="btn btn-outline-none bg-warning px-5 my-4" onclick="minus()">-</button>
+            <button class="btn btn-outline-none bg-warning px-5 my-4" onclick="cross()">*</button>
+            <button class="btn btn-outline-none bg-warning px-5 my-4" onclick="divide()">/</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="Index.js"></script>
